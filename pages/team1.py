@@ -49,6 +49,6 @@ else:
     st.write("### Your Next Clue:")
     for i in questions:
         data += i['answer']
-    st.ballons()
+    st.balloons()
     vote(data)
     
