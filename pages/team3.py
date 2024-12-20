@@ -44,6 +44,6 @@ else:
     data = ""
     st.write("### Your Next Clue:")
     for i in questions:
-        data += "." +i['answer']
+        data += ['answer']
     st.write(data)
     
