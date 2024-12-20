@@ -2,6 +2,10 @@ import streamlit as st
 import json
 import os
 
+@st.dialog("Congratulations!")
+def vote(data):
+    st.write(data)
+
 # Load questions from team1.json file
 json_file_path = os.path.join('pages', 'team4.json')
 
@@ -46,4 +50,4 @@ else:
     for i in questions:
         data += i['answer']
     st.write(data)
-    
+    vote(data)

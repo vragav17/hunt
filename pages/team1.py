@@ -2,9 +2,10 @@ import streamlit as st
 import json
 import os
 
-@st.dialog("Your Next Clue")
+@st.dialog("Congratulations!")
 def vote(data):
-    st.write(f"data: {data}")
+    st.balloons()
+    st.write(data)
 
 # Load questions from team1.json file
 json_file_path = os.path.join('pages', 'team1.json')
@@ -49,6 +50,6 @@ else:
     st.write("### Your Next Clue:")
     for i in questions:
         data += i['answer']
-    st.balloons()
+    st.write(data)
     vote(data)
     
