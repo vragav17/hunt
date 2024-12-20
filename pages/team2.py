@@ -4,7 +4,7 @@ import os
 
 @st.dialog("Congratulations!")
 def vote(data):
-    st.ballons()
+    st.balloons()
     st.write(data)
 # Load questions from team1.json file
 json_file_path = os.path.join('pages', 'team2.json')
